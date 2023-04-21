@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication</title>
+  <link rel="stylesheet" href="./auth.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <div class="signup">Sign Up</div>
+      <div class="login">Log In</div>
+
+      <div class="signup-form">
+        <input type="text" placeholder="Your Email Address" class="input"><br />
+        <input type="text" placeholder="Choose a Username" class="input"><br />
+        <input type="password" placeholder="Choose a Password" class="input"><br />
+        <div class="btn">Sign Up</div>
+
+      </div>
+
+      <div class="login-form">
+        <input type="text" placeholder="Email or Username" class="input"><br />
+        <input type="password" placeholder="Password" class="input"><br />
+        <div class="btn">log in</div>
+        <span><a href="../pwRecovery/passwordRecover.html">Forgot my username or password?</a></span>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Get the elements and store them in variables
+    const loginForm = document.querySelector(".login-form");
+    const login = document.querySelector(".login");
+    const signupForm = document.querySelector(".signup-form");
+    const signup = document.querySelector(".signup");
+    const buttons = document.querySelectorAll(".btn");
+    const inputs = document.querySelectorAll(".input");
+
+    // Hide the login form and set the login background to none
+    loginForm.style.display = "none";
+    login.style.background = "none";
+
+    // Add a click event listener to the login button
+    login.addEventListener("click", function () {
+      // Hide the signup form and show the login form
+      signupForm.style.display = "none";
+      loginForm.style.display = "block";
+
+      // Set the background of the login and signup buttons
+      login.style.background = "#fff";
+      signup.style.background = "none";
+    });
+
+    // Add a click event listener to the signup button
+    signup.addEventListener("click", function () {
+      // Hide the login form and show the signup form
+      loginForm.style.display = "none";
+      signupForm.style.display = "block";
+      // Set the background of the login and signup buttons
+      login.style.background = "none";
+      signup.style.background = "#fff";
+    });
+
+    // Add a click event listener to all buttons with the class "btn"
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        // Set the value of all input elements to an empty string
+        inputs.forEach(function (input) {
+          input.value = "";
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>
