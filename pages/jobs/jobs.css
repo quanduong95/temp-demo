@@ -232,6 +232,8 @@ a{
   position: relative;
   width: 100%;
   height: auto;
+  margin: auto;
+  max-width: 1250px;
 }
 
 .nav-wrapper {
@@ -646,7 +648,6 @@ footer {
   margin-top: 10em;
   width: 100%;
   margin-bottom: 20px;
-  border-top: 1px solid #afadad;
 }
 
 .contact-connect {

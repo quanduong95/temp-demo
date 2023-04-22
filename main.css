@@ -14,7 +14,9 @@ h1,
 p {
   color: #fff;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -34,7 +36,7 @@ a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
@@ -46,9 +48,12 @@ a:hover{
   margin-left: 1rem;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .row {
   width: 100%;
-  float: left;
   margin-bottom: 0.5em;
 }
 
@@ -254,6 +259,8 @@ a:hover{
 .page-wrapper {
   width: 100%;
   height: auto;
+  margin: auto;
+  max-width: 1250px;
 }
 
 .nav-wrapper {
@@ -314,6 +321,7 @@ a:hover{
 .nav button:hover {
   cursor: pointer;
   color: #af2124;
+  font-size: 1.2rem;
 }
 
 /* Style for the underline element */
@@ -405,23 +413,53 @@ a:hover{
 
 .alumni-highlight__content-home {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .alumni-highlight__content-home:hover {
   cursor: pointer;
 }
 
+.alumni-highlight__content-home::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000; /* change color to suit your needs */
+  transition: width 0.5s ease-in-out;
+}
+
+.alumni-highlight__content-home:hover::before {
+  width: 100%;
+}
+
 .alumni-highlight__content-title {
+  position: relative;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 12em;
   padding-bottom: 2em;
   margin-bottom: 2em;
-  border-bottom: 1px solid #af2124;
+}
+
+.alumni-highlight__content-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 20px;
+  width: 110%;
+  height: 1px;
+  background-color: #7e0add;
 }
 
 .alumni-highlight__content-content {
+  font-size: 1.2rem;
 }
 .alumni-highlight__content-button {
   margin-top: 2em;
@@ -433,6 +471,7 @@ a:hover{
   width: 40%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 /* 
 .upcoming-events-wrapper {
   width: 95%;
@@ -495,6 +534,18 @@ a:hover{
 .stories-wrapper .stories__title {
   font-size: 1.6rem;
   margin: 2em 0;
+  border: 1px solid #7e0add;
+  max-width: 140px;
+  text-align: center;
+  padding: 12px;
+}
+.stories-wrapper .stories__title::after {
+}
+
+.stories-wrapper .stories__title:hover {
+  cursor: pointer;
+  background-color: #7e0add;
+  color: white;
 }
 
 .stories-wrapper .stories__item-wrapper {
@@ -504,8 +555,13 @@ a:hover{
 }
 
 .stories__item-img img {
+  transition: transform 0.2s ease-in-out;
   width: 200px;
   margin-right: 1em;
+}
+.stories__item-img img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .stories__item-wrapper .stories__item-content-wrapper {
@@ -513,28 +569,56 @@ a:hover{
 
 .stories__item-content-wrapper .stories__item-content-date {
   font-size: 1rem;
-  margin-top: 0.5rem;
+  margin: 0.2rem 0;
 }
 
 .stories__item-content-wrapper .stories__item-content-title {
   font-size: 1.2rem;
-  margin: 0.4rem 0;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.stories__item-content-wrapper .stories__item-content-title::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:  #7e0add;
+  transition: width 0.5s ease-in-out;
+}
+
+.stories__item-content-wrapper .stories__item-content-title:hover::before {
+  width: 100%;
+}
+
+.stories__item-content-wrapper .stories__item-content-text {
+  margin-top: 0.2em;
 }
 
 .main-content-wrapper .events_wrapper {
-
 }
 .events-wrapper .events__item-title {
   font-size: 1.6rem;
   margin: 2em 0;
+  border: 1px solid #7e0add;
+  max-width: 140px;
+  text-align: center;
+  padding: 12px;
+}
+.events-wrapper .events__item-title:hover {
+  cursor: pointer;
+  background-color: #7e0add;
+  color: white;
 }
 
 .events-wrapper .events__item-wrapper {
-  margin-top: 4em;
 }
 
-.events__item-wrapper .events__item-date{
-  font-size: 1.4rem;
+.events__item-wrapper .events__item-date {
+  font-size: 1rem;
   margin: 0.6rem 0;
 }
 
@@ -543,16 +627,32 @@ a:hover{
   margin: 0.4rem 0;
 }
 
-
 .events__item-content .events__item-content-title {
   font-weight: 600;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
+
+.events__item-content .events__item-content-title::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:  #7e0add;
+  transition: width 0.5s ease-in-out;
+}
+
+.events__item-content .events__item-content-title:hover::before {
+  width: 100%;
+}
+
 .events__item-content .events__item-content-text {
   margin-top: 0.4rem;
   font-size: 0.9rem;
 }
-
-
 
 /*****************************************/
 
@@ -599,42 +699,79 @@ a:hover{
   align-items: center;
   font-size: 1.6rem;
 }
+
+.alumni-separator-wrapper:hover {
+}
+
 .alumni-separator-wrapper .alumni-news-wrapper__content {
 }
 
 .alumni-connect-wrapper {
   display: flex;
+  align-items: center;
+  margin: auto;
   width: 100%;
   height: 100vh;
   min-height: 350px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("https://live.staticflickr.com/65535/52407234359_d3c3b09d46_4k.jpg");
+  background: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3), #002962),
+    url("https://www.sierracollege.edu/wp-content/uploads/2022/05/Bird-Eye-View-of-Sierra-Campus.jpg");
   background-size: cover;
-  flex-direction: column;
-  justify-content: center;
   box-shadow: 4px 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
-.alumni-connect-wrapper__content {
+.alumni-connect-wrapper .alumni-connect__inner-wrapper {
+  width: 75%;
+  margin: auto;
+}
+
+.alumni-connect-wrapper .alumni-connect__first-row,
+.alumni-connect-wrapper .alumni-connect__second-row,
+.alumni-connect-wrapper .alumni-connect__third-row {
   display: flex;
+  color: white;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  height: 30%;
 }
 
-.alumni-connect-wrapper__content .content__title {
-  width: 65%;
+.alumni-connect-wrapper .alumni-connect__first-row {
+  text-align: right;
+}
+
+.alumni-connect__first-row .first-row__title {
+  text-align: right;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.8;
+}
+
+.alumni-connect__first-row .first-row__text {
+  line-height: 1.6;
+}
+
+.alumni-connect-wrapper .alumni-connect__second-row,
+.alumni-connect-wrapper .alumni-connect__third-row {
+  display: flex;
+}
+
+.alumni-connect__second-row button,
+.alumni-connect__third-row button {
+  height: 60px;
+  margin-top: 1.24em;
   text-align: center;
-  color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  border: 1px solid #ffcc4f;
 }
 
-.alumni-connect-wrapper__content .content__button {
-  margin-top: 1em;
+.alumni-connect__second-row button:hover,
+.alumni-connect__third-row button:hover {
+  background-color: white;
+  color: #b72027;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
-.alumni-connect-wrapper__content .content__button:hover {
-  color: white;
-}
+/*================================================*/
 
 .alumni-donate-wrapper {
   display: flex;
