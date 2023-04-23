@@ -488,7 +488,7 @@ a:hover {
   max-width: 60%;
   height: auto;
   width: 40%;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(231, 95, 95, 0.4) 5px 5px, rgba(218, 92, 60, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(158, 115, 142, 0.1) 20px 20px, rgba(133, 85, 115, 0.05) 25px 25px;
 }
 
 /* 
@@ -737,7 +737,7 @@ a:hover {
   background: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3), #002962),
     url("https://www.sierracollege.edu/wp-content/uploads/2022/05/Bird-Eye-View-of-Sierra-Campus.jpg");
   background-size: cover;
-  box-shadow: 4px 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
+  box-shadow: rgba(231, 95, 95, 0.4) 5px 5px, rgba(218, 92, 60, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(158, 115, 142, 0.1) 20px 20px, rgba(133, 85, 115, 0.05) 25px 25px;
 }
 
 .alumni-connect-wrapper .alumni-connect__inner-wrapper {
@@ -805,7 +805,7 @@ a:hover {
   background-size: cover;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 4px 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
+  box-shadow: rgba(231, 95, 95, 0.4) 5px 5px, rgba(218, 92, 60, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(158, 115, 142, 0.1) 20px 20px, rgba(133, 85, 115, 0.05) 25px 25px;
 }
 
 .alumni-donate-wrapper__content {

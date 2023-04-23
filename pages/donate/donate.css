@@ -26,7 +26,6 @@ h1 {
 h2 {
   color: #000;
   font-size: 1.3rem;
-  text-align: center;
   line-height: 1.4;
   margin-bottom: 10px;
 }
@@ -281,7 +280,6 @@ a:hover {
   cursor: pointer;
 }
 
-
 .nav-wrapper {
   height: auto;
   width: 100%;
@@ -289,7 +287,7 @@ a:hover {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index:1;
+  z-index: 1;
   background-color: #fff;
 }
 
@@ -378,7 +376,6 @@ a:hover {
 
 /* SECTIONS */
 
-
 .header-title {
   margin-top: 2.4rem;
   padding: 1rem;
@@ -387,11 +384,86 @@ a:hover {
   color: #af2124;
 }
 
-main .main-title{
-  float: left;
+main .main-title h1 {
+  display: flex;
+  font-size: 2rem;
+  margin: 1.2em 0;
   width: 100%;
 }
 
+main .main-text {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+}
+
+main .alumni-donate-wrapper {
+  display: block;
+}
+
+.alumni-donate-wrapper .gift-giving__title h2 {
+  font-size: 1.6rem;
+}
+
+.alumni-donate-wrapper .gift-giving__text {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.alumni-donate-wrapper .gift-giving__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  margin: 4em 0;
+  box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.2),
+    inset 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+.gift-giving__buttons-wrapper .gift-giving__button {
+  margin: 4rem;
+  padding: 0.8rem;
+  min-width: 200px;
+  text-align: center;
+  border: 1px solid #7e0add;
+}
+
+.gift-giving__buttons-wrapper .gift-giving__button:hover {
+  cursor: pointer;
+  background-color: #7e0add;
+  color: white;
+}
+
+.main-gift-giving-wrapper .main-support__title h2 {
+  font-size: 1.6rem;
+}
+
+.main-support .main-support__text {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.main-support .main-support__list-wrapper {
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  margin-top: 4em;
+}
+
+.main-support__list-wrapper ul li {
+  list-style: none;
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-bottom: 1px solid#eef1f1;
+}
+.main-support__list-wrapper ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: #f0e8ee;
+  border-radius: 6px;
+}
+
+.main-support__list-wrapper ul li:last-of-type {
+  border-bottom: transparent;
+}
 
 /* Media Queries */
 
