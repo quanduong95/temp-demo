@@ -542,12 +542,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin: 2em 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .stories-events-wrapper .stories-wrapper {
   height: 100%;
-  margin-left: 1em;
   width: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .stories-wrapper .stories__title {
@@ -619,6 +620,7 @@ a:hover {
 }
 
 .main-content-wrapper .events_wrapper {
+  margin-left: 1rem;
 }
 .events-wrapper .events__item-title {
   font-size: 1.6rem;
