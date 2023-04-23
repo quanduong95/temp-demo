@@ -6,10 +6,126 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
+
+  <link rel="stylesheet" type="text/css" href="./events.css">
+  <link href="../../assets/themify-icons-font/themify-icons/themify-icons.css" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Events Page</h1>
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <nav class="navbar">
+        <a href="../events/events.html"> <img
+            src="https://www.sierracollege.edu/wp-content/uploads/2022/03/sierra-logo-main-1.png"
+            alt="Company Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="../news/news.html">News</a></li>
+          <li class="nav-item"><a href="../calendar/calendar.html">Calendar</a></li>
+          <li class="nav-item"><a href="../jobs/jobs.html">Jobs</a></li>
+          <li class="nav-item"><a href="../donate/donate.html">Donate</a></li>
+          <li class="nav-item"><a href="../events/events.html">Events</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="header-title">
+        <p>EVENTS</p>
+      </div>
+    </header>
+    <div class="main-content-wrapper">
+      <footer>
+        <div class="contact-connect">
+          <div class="group-1">
+            <div class="logo-wrapper">
+              <img src="https://www.sierracollege.edu/wp-content/uploads/2022/03/sierra-college-square-logo.png" alt="">
+            </div>
+            <div class="address-wrapper">
+              <div class="address">
+                5100 Sierra College Blvd Rocklin, CA 95677
+              </div>
+              <div class="phone-number">
+                (916) 624-3333
+              </div>
+            </div>
+            <div class="employee-office-directory-wrapper">
+              <div class="maps-directions">
+                Maps and Directions
+              </div>
+              <div class="employee-office-directory">
+                Employee and Office Directory
+              </div>
+            </div>
+          </div>
+          <div class="group-2">
+            <div class="social-media-wrapper">
+              <a class="social-media-item logo-facebook">
+                <span class="ti-facebook"></span>
+              </a>
+              <a class="social-media-item logo-instagram">
+                <span class="ti-instagram"></span>
+              </a>
+              <a class="social-media-item logo-twitter">
+                <span class="ti-twitter"></span>
+              </a>
+              <a class="social-media-item logo-youtube">
+                <span class="ti-youtube"></span>
+
+              </a>
+              <a class="social-media-item logo-linkedin">
+                <span class="ti-linkedin"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pages-and-copyright-wrapper">
+          <div class="pages">
+            <div class="pages-item about-us">
+              About us
+            </div>
+            <div class="pages-item jobs">
+              Jobs
+            </div>
+            <div class="pages-item events">
+              Events
+            </div>
+            <div class="pages-item donation">
+              Donation
+            </div>
+            <div class="pages-item calendar">
+              Calendar
+            </div>
+            <div class="pages-item news">
+              News
+            </div>
+          </div>
+          <div class="copyright-row">
+            <div class="copyright-row-item"> © 2023 Sierra College</div>
+            <div class="copyright-row-item"> Sierra College is accredited by the Accrediting Commission for Community
+              and
+              Junior Colleges of the
+              Western Association of Schools and Colleges, an institutional accrediting body recognized by the
+              commission
+              on
+              Recognition of Postsecondary Accreditation and the U.S. Department of Education.</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.querySelector('.menu-toggle').addEventListener("click", function () {
+        var nav = document.querySelector(".nav");
+        nav.classList.toggle("mobile-nav");
+        this.classList.toggle("is-active");
+      });
+
+
+    </script>
 </body>
 
 </html>

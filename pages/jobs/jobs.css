@@ -496,7 +496,6 @@ main {
   height: 80vh;
 }
 
-
 .bottom-button button {
   float: right;
   margin-right: 2em;
@@ -512,7 +511,6 @@ main {
   border-color: #af2124;
   cursor: pointer;
 }
-
 
 .pagination {
   display: flex;
@@ -551,9 +549,6 @@ main {
   color: white;
   background: #af2124;
 }
-
-
-
 
 .modal {
   display: none;
@@ -628,7 +623,6 @@ main {
   display: flex;
 }
 
-
 .item-checkbox .checkbox-border:hover {
   cursor: pointer;
 }
@@ -669,13 +663,19 @@ main {
   border-color: #af2124;
 }
 
-
 .card-container {
   height: 60vh;
 }
 
 .card-wrapper {
   margin-top: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  box-shadow: rgba(206, 204, 204, 0.16) 0px 1px 2px, rgb(145, 143, 143) 0px 0px 0px 1px;
 }
 
 .card-item {
@@ -685,6 +685,7 @@ main {
   border: 1px solid #d4d2d0;
   border-radius: 6px;
   padding: 1rem;
+  box-shadow: rgba(143, 140, 140, 0.45) 0px 25px 20px -20px;
 }
 
 .card-item-title h4 {
