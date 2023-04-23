@@ -6,6 +6,7 @@
 }
 button {
   all: unset;
+  border-radius: 10px;
 }
 
 /* HEADINGS */
@@ -246,6 +247,7 @@ a:hover {
   font-weight: 600;
   padding: 10px;
   background-color: #f08532;
+  border-radius: 6px;
 }
 .default-btn:hover {
   background: transparent;
@@ -263,6 +265,24 @@ a:hover {
   max-width: 1250px;
 }
 
+.page-wrapper::after {
+  content: "";
+  position: fixed;
+  top: 90%;
+  left: 96%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f08532;
+}
+
+.page-wrapper::after:hover {
+  cursor: pointer;
+}
+
+
 .nav-wrapper {
   height: auto;
   width: 100%;
@@ -270,6 +290,7 @@ a:hover {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index:1;
   background-color: #fff;
 }
 
@@ -281,7 +302,6 @@ a:hover {
   align-items: center;
   height: 65px;
   overflow: hidden;
-  z-index: 99;
   box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
 }
 
@@ -321,7 +341,6 @@ a:hover {
 .nav button:hover {
   cursor: pointer;
   color: #af2124;
-  font-size: 1.2rem;
 }
 
 /* Style for the underline element */
@@ -538,6 +557,7 @@ a:hover {
   max-width: 140px;
   text-align: center;
   padding: 12px;
+  border-radius: 6px;
 }
 .stories-wrapper .stories__title::after {
 }
@@ -586,7 +606,7 @@ a:hover {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color:  #7e0add;
+  background-color: #7e0add;
   transition: width 0.5s ease-in-out;
 }
 
@@ -607,6 +627,7 @@ a:hover {
   max-width: 140px;
   text-align: center;
   padding: 12px;
+  border-radius: 6px;
 }
 .events-wrapper .events__item-title:hover {
   cursor: pointer;
@@ -641,7 +662,7 @@ a:hover {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color:  #7e0add;
+  background-color: #7e0add;
   transition: width 0.5s ease-in-out;
 }
 
@@ -761,6 +782,7 @@ a:hover {
   text-align: center;
   font-size: 1.2rem;
   border: 1px solid #ffcc4f;
+  border-radius: 6px;
 }
 
 .alumni-connect__second-row button:hover,
@@ -779,7 +801,7 @@ a:hover {
   height: 100vh;
   min-height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("https://scontent-sjc3-1.xx.fbcdn.net/v/t31.18172-8/23331501_1571149156284122_9149513831043032199_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=H-NqC4XgtUsAX-k64Qj&_nc_ht=scontent-sjc3-1.xx&oh=00_AfCtvSGwQWFJdjnij43hMNoC7DNU7l3bU1F475Gf3BGVCQ&oe=6469532D");
+    url("https://www.sierracollege.edu/wp-content/uploads/2023/04/student-housing-rendering-2000x1856-1.jpg");
   background-size: cover;
   flex-direction: column;
   justify-content: center;
