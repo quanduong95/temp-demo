@@ -13,7 +13,6 @@ button {
 
 h1,
 p {
-  color: #fff;
   text-align: center;
   line-height: 1.1;
   margin: 0;
@@ -426,6 +425,14 @@ body {
   box-shadow: 
     -1px -1px #F9A440, 
     inset -1px -1px 0 0 #F9A440;
+}
+
+.header-title {
+  margin-top: 2.4rem;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #af2124;
 }
 
 
