@@ -28,8 +28,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -460,11 +459,10 @@ a{
 }
 
 .header-title {
-  background-color: #c9c3c3;
   margin-top: 2.4rem;
   padding: 1rem;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #af2124;
 }
 
@@ -482,11 +480,80 @@ a{
 
 #filter-btn {
   color: #af2124;
-  border: 1px solid #af2124;
+  border: 1px solid #d4d2d0;
+  border-radius: 6px;
   padding: 10px 20px;
   font-size: 16px;
+}
+
+#filter-btn:hover {
+  outline: none !important;
+  border-color: #af2124;
   cursor: pointer;
 }
+
+main {
+  height: 80vh;
+}
+
+
+.bottom-button button {
+  float: right;
+  margin-right: 2em;
+  color: rgb(175, 33, 36);
+  border: 1px solid rgb(212, 210, 208);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.bottom-button button:hover {
+  outline: none !important;
+  border-color: #af2124;
+  cursor: pointer;
+}
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0;
+}
+
+.pagination-inner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  border: 1px solid #888;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+.pagination button:hover {
+  cursor: pointer;
+  border: transparent;
+  background-color: #af2124;
+}
+
+.pagination .pagination-item {
+  margin: 0 0.4rem;
+  padding: 0.6rem;
+}
+
+.pagination-item--active {
+  background: #af2124;
+  color: white;
+}
+
+.pagination .pagination-item:hover {
+  color: white;
+  background: #af2124;
+}
+
+
+
 
 .modal {
   display: none;
@@ -520,7 +587,7 @@ a{
   min-height: 40px;
 }
 
-.content-header .content-header-title{
+.content-header .content-header-title {
   font-size: 20px;
 }
 
@@ -555,7 +622,6 @@ a{
 }
 
 .item-wrapper .item-title {
-  
 }
 
 .item-wrapper .item-checkbox-wrapper {
@@ -563,17 +629,6 @@ a{
 }
 
 
-.item-wrapper .item-checkbox {
-
-}
-
-
-
-.item-checkbox .checkbox-border {
-  border: 1px solid #d1cece;
-  width: 12px;
-  height: 12px;
-}
 .item-checkbox .checkbox-border:hover {
   cursor: pointer;
 }
@@ -587,8 +642,10 @@ a{
 .search-wrapper .search-bar {
   width: 200px;
   padding: 8px 18px;
+  border-radius: 6px;
   font-size: 16px;
   margin-right: 8px;
+  border: 1px solid #d4d2d0;
 }
 
 .search-wrapper .search-bar:focus {
@@ -597,16 +654,24 @@ a{
 }
 
 .search-wrapper .search-button {
-  background-color: #af2124;
-  color: white;
+  color: black;
   border: none;
-  padding: 10px 20px;
+  border-radius: 6px;
+  padding: 8px 18px;
   font-size: 16px;
   cursor: pointer;
+  border: 1px solid #d4d2d0;
 }
 
 .search-wrapper .search-button:hover {
   cursor: pointer;
+  outline: none !important;
+  border-color: #af2124;
+}
+
+
+.card-container {
+  height: 60vh;
 }
 
 .card-wrapper {
@@ -615,21 +680,35 @@ a{
 
 .card-item {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  background-color: #c9c3c3;
+  align-items: start;
+  border: 1px solid #d4d2d0;
+  border-radius: 6px;
+  padding: 1rem;
 }
 
-.card-item-title button {
-  color: #af2124;
-  background-color: white;
-  margin: 12px auto;
-  padding: 6px 50px;
+.card-item-title h4 {
+  padding-bottom: 1rem;
 }
 
 .card-item .card-item-content {
-  margin: 12px 12px;
+}
+
+.card-item-content .card-item-content__location {
+  margin-bottom: 0.4rem;
+  color: rgb(77, 76, 76);
+  font-size: 0.9rem;
+}
+.card-item-content .card-item-content__salary {
+  margin-bottom: 0.4rem;
+  color: rgb(77, 76, 76);
+  font-size: 0.9rem;
+}
+.card-item-content .card-item-content__posted-by {
+  margin-bottom: 0.4rem;
+  color: rgb(177, 177, 177);
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 .card-item .card-item-button {
@@ -637,17 +716,21 @@ a{
   color: white;
   border-radius: 6px;
   padding: 6px 30px;
-  margin: 20px 0;
+  margin-top: 1rem;
+  text-align: center;
+  min-width: 120px;
 }
 
 .card-item .card-item-button:hover {
   cursor: pointer;
+  opacity: 0.9;
 }
 
 footer {
   margin-top: 10em;
   width: 100%;
   margin-bottom: 20px;
+  border-top: 1px solid #afadad;
 }
 
 .contact-connect {
