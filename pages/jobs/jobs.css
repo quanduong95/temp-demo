@@ -675,7 +675,6 @@ main {
 .card-wrapper:hover {
   cursor: pointer;
   transform: scale(1.04);
-  box-shadow: rgba(206, 204, 204, 0.16) 0px 1px 2px, rgb(145, 143, 143) 0px 0px 0px 1px;
 }
 
 .card-item {

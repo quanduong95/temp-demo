@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Alumni Sign-Up Form</title>
+  <link rel="stylesheet" href="signUp.css">
+</head>
+
+<body>
+  <h1>Alumni Verification Process</h1>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="first-name">First Name:</label>
+      <input type="text" class="personal-info-input" id="first-name" name="first-name"><br>
+      <label for="middle-name">Middle Name:</label>
+      <input type="text" class="personal-info-input" id="middle-name" name="middle-name"><br>
+      <label for="last-name">Last Name:</label>
+      <input type="text" class="personal-info-input" id="last-name" name="last-name"><br>
+      <label for="sierra-id">Sierra College ID:</label>
+      <input type="text" class="personal-info-input" id="sierra-id" name="sierra-id"><br>
+      <label for="years-attended">Years Attended:</label>
+      <input type="text" class="personal-info-input" id="years-attended" name="years-attended"><br>
+      <label for="degree-received">Sierra College Degree Received:</label>
+      <select id="degree-received" class="personal-info-input" name="degree-received">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+      <label for="degree">Degree Received:</label>
+      <input type="text" class="personal-info-input" id="degree" name="degree"><br>
+      <label for="year-received">Year Received:</label>
+      <input type="text" class="personal-info-input" id="year-received" name="year-received"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Questions to Build Profile</legend>
+      <label for="pronouns">Pronouns/Preferred Name:</label>
+      <input type="text" class="additional-questions-input" id="pronouns" name="pronouns"><br>
+      <label for="attended-years">Years Attended Sierra College:</label>
+      <input type="text" class="additional-questions-input" id="attended-years" name="attended-years"><br>
+      <label for="campus-attended">Which Campus(es) Did You Attend:</label>
+      <input type="text" class="additional-questions-input" id="campus-attended" name="campus-attended"><br>
+      <label for="major">What Was Your Major:</label>
+      <input type="text" class="additional-questions-input" id="major" name="major"><br>
+      <label for="favorite-memory">Favorite Memory of Sierra College:</label>
+      <textarea id="favorite-memory" class="additional-questions-input" name="favorite-memory"></textarea><br>
+      <label for="favorite-professor">Favorite Professor at Sierra College:</label>
+      <input type="text" class="additional-questions-input" id="favorite-professor" name="favorite-professor"><br>
+      <label for="other-info">Is There Anything Else You Would Like to Share About Your Time at Sierra College?</label>
+      <textarea id="other-info" class="additional-questions-input" name="other-info"></textarea><br>
+    </fieldset>
+    <button type="submit" class="default-btn submit-btn">Submit</button>
+  </form>
+</body>
+
+</html>
