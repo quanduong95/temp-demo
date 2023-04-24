@@ -519,6 +519,11 @@ main {
   padding: 0.4rem 0;
 }
 
+.pagination__left-arrow:hover,
+.pagination__right-arrow:hover {
+  color: white;
+}
+
 .pagination-inner-wrapper {
   display: flex;
   justify-content: center;

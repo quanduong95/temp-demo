@@ -489,6 +489,10 @@ a {
   border-radius: 6px;
 }
 
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
 footer {
   margin-top: 10em;
   width: 100%;
