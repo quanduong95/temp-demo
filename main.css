@@ -393,8 +393,6 @@ a:hover {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .hero .content-wrapper {
   position: relative;
 }
@@ -405,8 +403,6 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
 
 .content-wrapper .content-title {
   font-size: 2rem;
@@ -422,26 +418,24 @@ a:hover {
   font-size: 1.6rem;
 }
 .content-wrapper .content-icon {
-  padding: 12px; 
+  padding: 12px;
   font-size: 1.8rem;
 }
 
 .content-wrapper .content-title,
 .content-wrapper .content-welcome,
-.content-wrapper .content-text{
+.content-wrapper .content-text {
   margin-bottom: 1rem;
 }
 
-.content-wrapper .content-scroll-down  {
+.content-wrapper .content-scroll-down {
   margin-top: 3rem;
   padding: 12px;
 }
 
-
 .main-content-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 6em;
   align-items: center;
   justify-content: center;
   font-style: bold;
@@ -676,6 +670,7 @@ a:hover {
 }
 
 .events-wrapper .events__item-wrapper {
+  margin: 2em 0;
 }
 
 .events__item-wrapper .events__item-date {

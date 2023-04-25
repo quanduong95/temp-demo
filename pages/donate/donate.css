@@ -378,6 +378,9 @@ a:hover {
 
 .header-title {
   margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  float: left;
+  margin-left: -1rem;
   padding: 1rem;
   font-weight: 800;
   font-size: 2rem;

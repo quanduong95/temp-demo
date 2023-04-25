@@ -37,7 +37,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
 }
 
 .mr-1 {
@@ -258,6 +257,8 @@ a:hover {
 /* BASIC SETUP */
 
 .page-wrapper {
+  display:flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   margin: auto;
@@ -281,7 +282,6 @@ a:hover {
   cursor: pointer;
 }
 
-
 .nav-wrapper {
   height: auto;
   width: 100%;
@@ -289,7 +289,7 @@ a:hover {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index:1;
+  z-index: 1;
   background-color: #fff;
 }
 
@@ -378,7 +378,6 @@ a:hover {
 
 /* SECTIONS */
 
-
 .week {
   display: flex;
   width: 100%;
@@ -400,7 +399,8 @@ a:hover {
 
 /* OTHER STYLES */
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -419,22 +419,22 @@ body {
 }
 
 .day {
-  color: #F98909;
+  color: #f98909;
   padding: 5px;
-  background-color: transparentize(white, 0.30);
-  box-shadow: 
-    -1px -1px #F9A440, 
-    inset -1px -1px 0 0 #F9A440;
+  background-color: transparentize(white, 0.3);
+  box-shadow: -1px -1px #f9a440, inset -1px -1px 0 0 #f9a440;
 }
 
 .header-title {
   margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  float: left;
+  margin-left: -1rem;
   padding: 1rem;
   font-weight: 800;
   font-size: 2rem;
   color: #af2124;
 }
-
 
 .hero {
   display: flex;
@@ -467,430 +467,60 @@ body {
 .main-content-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 6em;
   align-items: center;
   justify-content: center;
   font-style: bold;
   height: 100%;
 }
 
-.alumni-highlight-wrapper {
+
+.main-content-wrapper .main-content-item-wrapper {
+}
+
+.main-content-wrapper .item-left-side {
   display: flex;
-  justify-content: space-between;
-  flex: 1;
-  width: 100%;
-  margin: 4em 2em 1em;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
-.alumni-highlight__content {
-  margin-left: 1em;
+.item-left-side .item-left-side-item {
+  margin: 0.6em 0;
 }
 
-.alumni-highlight__content-home {
-  font-weight: 600;
-  font-size: 1.4rem;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
+.item-left-side-item.item-date {
+  margin-top: 1.8em;
+  font-size: 1.6rem;
 }
 
-.alumni-highlight__content-home:hover {
-  cursor: pointer;
+.item-left-side-item.item-type {
+
 }
 
-.alumni-highlight__content-home::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000; /* change color to suit your needs */
-  transition: width 0.5s ease-in-out;
+.item-left-side-item.item-title {
+  font-size: 1.8rem;
 }
 
-.alumni-highlight__content-home:hover::before {
-  width: 100%;
+
+.item-left-side-item.item-time {
+  
 }
 
-.alumni-highlight__content-title {
-  position: relative;
-  font-weight: 500;
-  font-size: 1.4rem;
-  margin-top: 12em;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
+.item-left-side-item.item-read-more {
+  text-decoration: underline;
 }
 
-.alumni-highlight__content-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 20px;
-  width: 110%;
-  height: 1px;
-  background-color: #7e0add;
-}
-
-.alumni-highlight__content-content {
-  font-size: 1.2rem;
-}
-.alumni-highlight__content-button {
+.load-more-btn {
   margin-top: 2em;
-}
+} 
 
-.alumni-highlight-wrapper .alumni-hightlight__img {
-  max-width: 60%;
-  height: auto;
-  width: 40%;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* 
-.upcoming-events-wrapper {
-  width: 95%;
-  margin: auto;
-}
-.upcoming-events__content {
-}
-
-.upcoming-events__content-first-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 2em 0;
-}
-
-.first-row__title {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.first-row__title:hover {
-  cursor: pointer;
-}
-
-.first-row__button {
-}
-
-.upcoming-events__content-second-row {
-  display: flex;
-}
-.second-row__item {
-}
-.second-row__item-img {
-}
-
-.second-row__item-title {
-  float: left;
-  color: black;
-  margin-top: 0.8em;
-  font-size: 1.2rem;
-}
-
-.second-row__item-title:hover {
-  cursor: pointer;
-  opacity: 0.9;
-  color: #138aa6;
-} */
-
-.main-content-wrapper .stories-events-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 2em 0;
-}
-
-.stories-events-wrapper .stories-wrapper {
-  height: 100%;
-  margin-left: 1em;
-  width: 50%;
-}
-
-.stories-wrapper .stories__title {
-  font-size: 1.6rem;
-  margin: 2em 0;
-  border: 1px solid #7e0add;
-  max-width: 140px;
-  text-align: center;
-  padding: 12px;
-  border-radius: 6px;
-}
-.stories-wrapper .stories__title::after {
-}
-
-.stories-wrapper .stories__title:hover {
-  cursor: pointer;
-  background-color: #7e0add;
-  color: white;
-}
-
-.stories-wrapper .stories__item-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 2em 0;
-}
-
-.stories__item-img img {
-  transition: transform 0.2s ease-in-out;
-  width: 200px;
-  margin-right: 1em;
-}
-.stories__item-img img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.stories__item-wrapper .stories__item-content-wrapper {
-}
-
-.stories__item-content-wrapper .stories__item-content-date {
-  font-size: 1rem;
-  margin: 0.2rem 0;
-}
-
-.stories__item-content-wrapper .stories__item-content-title {
-  font-size: 1.2rem;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.stories__item-content-wrapper .stories__item-content-title::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #7e0add;
-  transition: width 0.5s ease-in-out;
-}
-
-.stories__item-content-wrapper .stories__item-content-title:hover::before {
-  width: 100%;
-}
-
-.stories__item-content-wrapper .stories__item-content-text {
-  margin-top: 0.2em;
-}
-
-.main-content-wrapper .events_wrapper {
-}
-.events-wrapper .events__item-title {
-  font-size: 1.6rem;
-  margin: 2em 0;
-  border: 1px solid #7e0add;
-  max-width: 140px;
-  text-align: center;
-  padding: 12px;
-  border-radius: 6px;
-}
-.events-wrapper .events__item-title:hover {
-  cursor: pointer;
-  background-color: #7e0add;
-  color: white;
-}
-
-.events-wrapper .events__item-wrapper {
-}
-
-.events__item-wrapper .events__item-date {
-  font-size: 1rem;
-  margin: 0.6rem 0;
-}
-
-.events__item-content .events__item-content-location {
-  font-size: 1rem;
-  margin: 0.4rem 0;
-}
-
-.events__item-content .events__item-content-title {
-  font-weight: 600;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.events__item-content .events__item-content-title::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #7e0add;
-  transition: width 0.5s ease-in-out;
-}
-
-.events__item-content .events__item-content-title:hover::before {
-  width: 100%;
-}
-
-.events__item-content .events__item-content-text {
-  margin-top: 0.4rem;
-  font-size: 0.9rem;
+.item-right-side img {
+  max-width: 100%;
 }
 
 /*****************************************/
 
-.alumni-news-wrapper {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  min-height: 350px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/74664586_2557805187618509_4733898088769388544_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=zkACk4SU3L4AX85TVYJ&_nc_ht=scontent-sjc3-1.xx&oh=00_AfC5uYq-6DxkuoAVY6E2kjZs6AEa90lmVtxq9dewzWIpbw&oe=64694C6E");
-  background-size: cover;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 4px 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
-}
-
-.alumni-news-wrapper__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.alumni-news-wrapper__content .content__title {
-  width: 65%;
-  text-align: center;
-  color: white;
-  font-size: 1.6rem;
-}
-
-.alumni-news-wrapper__content .content__button {
-  margin-top: 1em;
-}
-
-.alumni-news-wrapper__content .content__button:hover {
-  color: white;
-}
-
-.alumni-separator-wrapper {
-  margin: 2em 0;
-  padding: 2em 2em;
-  display: flex;
-  border-top: 1px solid #138aa6;
-  border-bottom: 1px solid #138aa6;
-  align-items: center;
-  font-size: 1.6rem;
-}
-
-.alumni-separator-wrapper:hover {
-}
-
-.alumni-separator-wrapper .alumni-news-wrapper__content {
-}
-
-.alumni-connect-wrapper {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  min-height: 350px;
-  background: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3), #002962),
-    url("https://www.sierracollege.edu/wp-content/uploads/2022/05/Bird-Eye-View-of-Sierra-Campus.jpg");
-  background-size: cover;
-  box-shadow: 4px 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
-}
-
-.alumni-connect-wrapper .alumni-connect__inner-wrapper {
-  width: 75%;
-  margin: auto;
-}
-
-.alumni-connect-wrapper .alumni-connect__first-row,
-.alumni-connect-wrapper .alumni-connect__second-row,
-.alumni-connect-wrapper .alumni-connect__third-row {
-  display: flex;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  height: 30%;
-}
-
-.alumni-connect-wrapper .alumni-connect__first-row {
-  text-align: right;
-}
-
-.alumni-connect__first-row .first-row__title {
-  text-align: right;
-  font-size: 2.4rem;
-  margin-bottom: 0.8rem;
-  line-height: 1.8;
-}
-
-.alumni-connect__first-row .first-row__text {
-  line-height: 1.6;
-}
-
-.alumni-connect-wrapper .alumni-connect__second-row,
-.alumni-connect-wrapper .alumni-connect__third-row {
-  display: flex;
-}
-
-.alumni-connect__second-row button,
-.alumni-connect__third-row button {
-  height: 60px;
-  margin-top: 1.24em;
-  text-align: center;
-  font-size: 1.2rem;
-  border: 1px solid #ffcc4f;
-  border-radius: 6px;
-}
-
-.alumni-connect__second-row button:hover,
-.alumni-connect__third-row button:hover {
-  background-color: white;
-  color: #b72027;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-
-/*================================================*/
-
-.alumni-donate-wrapper {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  min-height: 350px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("https://www.sierracollege.edu/wp-content/uploads/2023/04/student-housing-rendering-2000x1856-1.jpg");
-  background-size: cover;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 4px 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
-}
-
-.alumni-donate-wrapper__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.alumni-donate-wrapper__content .content__title {
-  width: 65%;
-  text-align: center;
-  color: white;
-  font-size: 1.6rem;
-}
-
-#calendar {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 0 10px;
-}
-
-.alumni-donate-wrapper__content .content__button {
-  margin-top: 1em;
-}
-
-.alumni-donate-wrapper__content .content__button:hover {
-  color: white;
-}
 /* MOBILE MENU & ANIMATION */
 
 .menu-toggle .bar {
