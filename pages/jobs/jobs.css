@@ -246,6 +246,45 @@ a {
   z-index: 99;
 }
 
+
+.header-title {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  float: left;
+  margin-left: -1rem;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #af2124;
+}
+
+.hero {
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
+  height: 50vh;
+  min-height: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("https://www.sierracollege.edu/wp-content/uploads/2022/07/hr-human-resources-hero-1536x455.jpg");
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero .content-wrapper {
+  position: relative;
+}
+
+.content-wrapper .content-items-wrapper {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+
 /* NAVIGATION */
 
 .navbar {

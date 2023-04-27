@@ -428,14 +428,26 @@ body {
     inset -1px -1px 0 0 #F9A440;
 }
 
+.header-title {
+  display: block;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  float: left;
+  margin-left: -1rem;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #af2124;
+}
 
 .hero {
   display: flex;
+  margin-top: 1em;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   min-height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("https://www.sierracollege.edu/wp-content/uploads/2022/09/welcome-back-event-flickr-52307008348_b3f43a6904_4k.jpg");
+    url("https://www.sierracollege.edu/wp-content/uploads/2022/08/choose-sierra-1536x455.jpg");
   background-size: cover;
   flex-direction: column;
   justify-content: center;
@@ -447,14 +459,11 @@ body {
 }
 
 .content-wrapper .content-items-wrapper {
+  color: white;
   position: absolute;
-  top: 60px;
-}
-
-.content-wrapper .content-item {
-  font-size: 3.6rem;
-  font-weight: 800;
-  margin-left: 4rem;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 
 .main-content-wrapper {
