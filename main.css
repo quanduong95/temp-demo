@@ -6,7 +6,6 @@
 }
 button {
   all: unset;
-  border-radius: 10px;
 }
 
 /* HEADINGS */
@@ -337,8 +336,9 @@ a:hover {
   transition: color 0.3s ease-out;
 }
 
-.nav-item a:hover,
-.nav button:hover {
+
+
+.nav-item a:hover {
   cursor: pointer;
   color: #af2124;
 }
@@ -363,13 +363,21 @@ a:hover {
 
 .nav button {
   text-align: center;
-  color: #000;
+  color: white;
   min-width: 80px;
-  font-size: 1.3rem;
-  padding: 4px;
+  font-size: 1rem;
+  padding: 0.6em;
   margin: 2px;
+  text-transform: capitalize;
+  background-color: #af2124;
+}
+
+.nav button:hover {
+  color: #af2124;
   border: 1px solid #af2124;
-  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .nav button a {
